@@ -66,3 +66,46 @@ public class acad {
 	}
 
 }
+
+
+
+Q4-Write a program to accept two numbers from “stdin” and find all the odd as well as even numbers present in between them.
+
+
+import java.util.Scanner;
+
+
+public class acad {
+	public static void main(String args[])
+	{
+		int a,b;
+		Scanner s = new Scanner(System.in);
+		
+		a=s.nextInt();
+		b=s.nextInt();
+		
+		System.out.println("odd numbers : ");
+		
+		for(int i=a+1;i<b;i++)
+		{
+			if(i%2!=0)
+			{
+				System.out.print(i+" ");
+			}
+		}
+		
+		System.out.println("\neven numbers : ");
+		
+		for(int i=a+1;i<b;i++)
+		{
+			if(i%2==0)
+			{
+				System.out.print(i+" ");
+			}
+		}
+		
+	}
+	
+	
+
+}
